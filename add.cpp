@@ -15,7 +15,7 @@ void add(int n, T* x, T* y){
 int main(){
     std::cout << std::fixed << std::setprecision(20);
 	
-	int n = 1<<26;
+	int n = 1<<20;
 
 	auto *x = new Real[n];
 	auto *y = new Real[n];

@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <iomanip>
 
-typedef float Real;
+typedef double Real;
 
 __global__
 void add(int n, Real* x, Real* y){
@@ -18,7 +18,7 @@ void add(int n, Real* x, Real* y){
 int main(){
     std::cout << std::fixed << std::setprecision(20);
 
-	int n = 1<<26;
+	int n = 1<<20;
 
 	Real *x, *y;
 	cudaMallocManaged(&x, n*sizeof(Real));
